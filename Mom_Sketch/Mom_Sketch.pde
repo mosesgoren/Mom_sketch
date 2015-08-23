@@ -1,6 +1,6 @@
 Box box;
 
-float choice = 1;
+int choice = 1;
 float off = 1;
 
 void setup() {
@@ -17,16 +17,15 @@ void draw() {
         if (mousePressed) {
           box.display(x, y + off, choice );
         } else {
-          choice = random(0, 87);
-          off = random(-30,30);
+          choice = int(random(0, 87));
+          off = random(-30, 30);
         }
       }
     }
   }
 
-//50 200 200 25 200 200 25 200 200 50
+  //50 200 200 25 200 200 25 200 200 50
 
   fill(0, 2);
   //rect(0, 0, width, height);
 }
-
